@@ -5,20 +5,36 @@ html,body {
     width: 100%;
 }
 
-#logo {
-    padding:20px;
+.head {
+  display: flex;
+  width: 100%;
+  justify-content:start;
+  height: 100px;
+  
 }
 
-.left, .right {
-    display: inline-block;
+.logo, .title, .right{
+  display: block;
+  margin-left:100px;
 }
 
-.right {
-    float: right;
+.logo{
+  margin-top:30px;
 }
 
-.socials {
-    padding: 20px;
+.title{
+  margin-top:50px;
+
+}
+
+.right{
+  margin-right:100px;
+  margin-left:auto;
+  margin-top: 30px;
+}
+
+.socials{
+  margin-left:30px;
 }
 
 .navbar {
