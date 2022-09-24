@@ -1,97 +1,161 @@
 html,body {
-    padding:0;
-    margin:0;
-    height: 100%;
-    width: 100%;
+  padding:0;
+  margin:0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(245, 243, 243, 0.89);
+}
+
+main {
+  margin-left:200px;
+  margin-right:200px;
+  min-height: 600px;
+  overflow: hidden;
+  background-color: white;
 }
 
 .head {
-  display: flex;
-  width: 100%;
-  justify-content:start;
-  height: 100px;
-  
+display: flex;
+width: 100%;
+justify-content:start;
+height: 100px;
+background-color: rgba(245, 243, 243, 0.89);
 }
 
 .logo, .title, .right{
-  display: block;
-  margin-left:100px;
+display: block;
+margin-left:100px;
 }
 
 .logo{
-  margin-top:30px;
+margin-top:30px;
 }
 
 .title{
-  margin-top:50px;
+margin-top:50px;
 
 }
 
 .right{
-  margin-right:100px;
-  margin-left:auto;
-  margin-top: 30px;
+margin-right:100px;
+margin-left:auto;
+margin-top: 30px;
 }
 
 #socials {
-  display:flex;
-  list-style: none;
+display:flex;
+list-style: none;
 }
 
 #socials li a {
-  margin-left:30px;
+margin-left:30px;
 }
 
 #navbar {
-  list-style: none inside;
-  margin: 0;
-  padding-top: 0;
-  text-align: center;
-  background-color: rgb(240, 99, 99);
+list-style: none inside;
+margin: 0;
+padding-top: 0;
+text-align: center;
+background-color: rgb(240, 99, 99);
+position:relative;
+z-index:10;
 }
 
 #navbar li {
-  display: inline-block;
-  position: sticky;
-  background-color: rgb(240, 99, 99);
+display: inline-block;
+position: sticky;
+background-color: rgb(240, 99, 99);
 }
 
 #navbar li a { /*tab in nav bar*/
-  display: block;
-  padding: 0;
-  width:200px;
-  text-decoration: none;
-  line-height: 45px;
-  color: white;
+display: block;
+padding: 0;
+width:200px;
+text-decoration: none;
+line-height: 45px;
+color: white;
 }
 
 #navbar li li a { /*dropdown font size*/
-  font-size: 90%;
+font-size: 90%;
 }
 
 
 #navbar li:hover {
-  background: rgb(169, 65, 83);
+background: rgb(169, 65, 83);
 }
 
 #navbar ul { /*sublist in dropdown*/
-  position: absolute;
-  padding: 0;
-  left: 0;
-  display: none; /* hides sublist */
+position: absolute;
+padding: 0;
+left: 0;
+display: none; /* hides sublist */
+z-index:1111;
 }
 
 #navbar li:hover ul ul { /*sub-sublist*/
-  display: none;
+display: none;
 }
 
 
 #navbar li:hover ul { /* shows sublist when hovering on tab */
-  display: block;
+display: block;;
 }
 
 #navbar li li:hover ul {
-  display: block; /* shows sub-sublist on hover */
-  margin-left: 200px;
-  margin-top: -45px; /* aligns top of sub-sublist with sublist */
+display: block; /* shows sub-sublist on hover */
+margin-left: 200px;
+margin-top: -45px; /* aligns top of sub-sublist with sublist */
 }
+
+/* RECIPE IMAGE GRID */
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%; 
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
