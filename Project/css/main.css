@@ -33,45 +33,65 @@ html,body {
   margin-top: 30px;
 }
 
-.socials{
+#socials {
+  display:flex;
+  list-style: none;
+}
+
+#socials li a {
   margin-left:30px;
 }
 
-.navbar {
-    margin: 0 auto;
-    padding-top:10px;
-    text-align: center;
+#navbar {
+  list-style: none inside;
+  margin: 0;
+  padding-top: 0;
+  text-align: center;
+  background-color: rgb(240, 99, 99);
 }
 
-.nav-items {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(240, 99, 99);
-    position: -webkit-sticky;
-    position:sticky;
-    top: 0;
-  }
-  
-li {
-    display:inline-block;
-    
-  }
+#navbar li {
+  display: inline-block;
+  position: sticky;
+  background-color: rgb(240, 99, 99);
+}
 
-.tab {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 50px;
-    text-decoration: none;
-    
-  }
+#navbar li a { /*tab in nav bar*/
+  display: block;
+  padding: 0;
+  width:200px;
+  text-decoration: none;
+  line-height: 45px;
+  color: white;
+}
 
-.tab:hover:not(.active) {
-    background-color: rgb(169, 65, 83);
-  }
-  
-.active {
-    background-color: rgb(121, 8, 35);
-  }
+#navbar li li a { /*dropdown font size*/
+  font-size: 90%;
+}
+
+
+#navbar li:hover {
+  background: rgb(169, 65, 83);
+}
+
+#navbar ul { /*sublist in dropdown*/
+  position: absolute;
+  padding: 0;
+  left: 0;
+  display: none; /* hides sublist */
+}
+
+#navbar li:hover ul ul { /*sub-sublist*/
+  display: none;
+}
+
+
+#navbar li:hover ul { /* shows sublist when hovering on tab */
+  display: block;
+}
+
+#navbar li li:hover ul {
+  display: block; /* shows sub-sublist on hover */
+  margin-left: 200px;
+  margin-top: -45px; /* aligns top of sub-sublist with sublist */
+}
