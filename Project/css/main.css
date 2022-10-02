@@ -158,7 +158,7 @@ margin-top: -45px; /* aligns top of sub-sublist with sublist */
   opacity: 1;
 }
 
-.footer {
+footer {
   position: relative;
    width: 100%;
    background-color: rgb(240, 99, 99);
