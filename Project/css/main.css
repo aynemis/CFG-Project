@@ -32,6 +32,7 @@ h1 {
   color: #000000;
   align-items: center;
   text-align: center;
+  max-width: 560px;
 }
 h2 {
   font-family: "Jost";
@@ -43,6 +44,7 @@ h2 {
   color: #000000;
   align-items: center;
   text-align: center;
+  max-width: 560px;
 }
 p, header, footer, a {
   font-family: "Lato";
@@ -56,6 +58,9 @@ p, header, footer, a {
 }
 p {
   max-width: 560px;
+}
+figcaption {
+  font-family: "Lato";
 }
 #granny {
   width: 522px;
@@ -213,4 +218,7 @@ footer {
   background-color: rgb(240, 99, 99);
   color: white;
   text-align: left;
+}
+.footercontent {
+  margin: 100px;
 }
