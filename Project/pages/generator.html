@@ -13,42 +13,59 @@
 <body>
   <header>
     <div class="head">
-       <div class="logo"> <a href="../pages/homepage.html"> <img src="../img/logo.png" alt="Logo" width="150px" height="50px"></a></div> 
-       <div class="title">The Virtual Grandma</div>
-       <div class="right">
+      <div class="logo"> <a href="../pages/homepage.html"> <img src="../img/logo.png" alt="Logo" width="150px"
+            height="50px"></a></div>
+      <div class="title">The Virtual Grandma</div>
+      <div class="right">
         <ul id=socials>
-            <li><a href="https://www.instagram.com" target="_blank"> <img src="../img/instagram.png" alt="instagram" width="20px" height="20px"></a></li>
-            <li><a href="https://www.facebook.com" target="_blank"> <img src="../img/facebook.png" alt="facebook" width="20px" height="20px"></a></li>
-            <li><a href="https://www.twitter.com" target="_blank"> <img src="../img/twitter.png" alt="twitter" width="20px" height="20px"></a></li>
-        </ul> 
-       </div>   
+          <li><a href="https://www.instagram.com" target="_blank"> <img src="../img/instagram.png" alt="instagram"
+                width="20px" height="20px"></a></li>
+          <li><a href="https://www.facebook.com" target="_blank"> <img src="../img/facebook.png" alt="facebook"
+                width="20px" height="20px"></a></li>
+          <li><a href="https://www.twitter.com" target="_blank"> <img src="../img/twitter.png" alt="twitter"
+                width="20px" height="20px"></a></li>
+        </ul>
+      </div>
     </div>
-    <nav> 
-        <ul id="navbar">
-            <li><a href="../pages/generator.html">Name Generator</a></li>
-            <li><a href="../pages/recipes.html">Recipes</a>
+    <nav>
+      <ul id="navbar">
+        <li><a href="../pages/generator.html">Name Generator</a></li>
+        <li><a href="../pages/recipes.html">Recipes</a>
+          <ul>
+            <li><a href="../pages/recipes.html">All</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Special Diet <i class="fa-solid fa-arrow-right"></i></a>
               <ul>
-                <li><a href="../pages/recipes.html">All</a></li>
-                <li><a href="#">Desserts</a></li>
-                <li><a href="#">Special Diet <i class="fa-solid fa-arrow-right"></i></a>
-                  <ul>
-                    <li><a href="#">Dairy-free</a>
-                      <li><a href="#">Vegan</a>
-                  </ul>
-                  </li>
+                <li><a href="#">Dairy-free</a>
+                <li><a href="#">Vegan</a>
               </ul>
-              </li>
-              <li><a href="../pages/about.html">About</a></li>
+            </li>
           </ul>
+        </li>
+        <li><a href="../pages/about.html">About</a></li>
+      </ul>
     </nav>
   </header>
-  
+
   <main>
 
     <h1>Pretentious Name Generator</h1>
     <h2>Specially made for
       your spoiled child or pet</h2>
-
+    <form>
+      <p>Please select preferable options for your desired name:</p>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="not important" name="gender" value="not important">
+      <label for="not important">Not important</label><br><br>
+      <input type="checkbox" id="title" name="title" value="title">
+      <label for="title">Add an aristocratic title</label><br><br>
+      <div class="button">
+        <input type="submit" value="Get Your Name!">
+      </div>
+    </form>
   </main>
 
   <footer>
