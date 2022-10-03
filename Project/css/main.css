@@ -1,111 +1,160 @@
-html,body {
-  padding:0;
-  margin:0;
+html,
+body {
+  padding: 0;
+  margin: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(245, 243, 243, 0.89);
 }
 
 main {
-  margin-left:200px;
-  margin-right:200px;
+  margin-left: 200px;
+  margin-right: 200px;
   min-height: 600px;
   overflow: hidden;
   background-color: white;
 }
 
 .head {
-display: flex;
-width: 100%;
-justify-content:start;
-height: 100px;
-background-color: rgba(245, 243, 243, 0.89);
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  height: 100px;
+  background-color: rgba(245, 243, 243, 0.89);
+}
+h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 111px;
+  line-height: 160px;
+  letter-spacing: 1.5px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+}
+h2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 69px;
+  line-height: 100px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+}
+p, header, footer, a {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 135%;
+  letter-spacing: 0.5px;
+  color: #000000;
+  align-items: center;
+}
+p {
+  max-width: 560px;
+}
+#granny {
+  width: 522px;
+  height: 652px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+.logo,
+.title,
+.right {
+  display: block;
+  margin-left: 100px;
 }
 
-.logo, .title, .right{
-display: block;
-margin-left:100px;
+.logo {
+  margin-top: 30px;
 }
 
-.logo{
-margin-top:30px;
+.title {
+  margin-top: 50px;
 }
 
-.title{
-margin-top:50px;
-
-}
-
-.right{
-margin-right:100px;
-margin-left:auto;
-margin-top: 30px;
+.right {
+  margin-right: 100px;
+  margin-left: auto;
+  margin-top: 30px;
 }
 
 #socials {
-display:flex;
-list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 #socials li a {
-margin-left:30px;
+  margin-left: 30px;
 }
 
 #navbar {
-list-style: none inside;
-margin: 0;
-padding-top: 0;
-text-align: center;
-background-color: rgb(240, 99, 99);
-position:relative;
-z-index:10;
+  list-style: none inside;
+  margin: 0;
+  padding-top: 0;
+  text-align: center;
+  background-color: rgb(240, 99, 99);
+  position: relative;
+  z-index: 10;
 }
 
 #navbar li {
-display: inline-block;
-position: sticky;
-background-color: rgb(240, 99, 99);
+  display: inline-block;
+  position: sticky;
+  background-color: rgb(240, 99, 99);
 }
 
-#navbar li a { /*tab in nav bar*/
-display: block;
-padding: 0;
-width:200px;
-text-decoration: none;
-line-height: 45px;
-color: white;
+#navbar li a {
+  /*tab in nav bar*/
+  display: block;
+  padding: 0;
+  width: 200px;
+  text-decoration: none;
+  line-height: 45px;
+  color: white;
 }
 
-#navbar li li a { /*dropdown font size*/
-font-size: 90%;
+#navbar li li a {
+  /*dropdown font size*/
+  font-size: 90%;
 }
-
 
 #navbar li:hover {
-background: rgb(169, 65, 83);
+  background: rgb(169, 65, 83);
 }
 
-#navbar ul { /*sublist in dropdown*/
-position: absolute;
-padding: 0;
-left: 0;
-display: none; /* hides sublist */
-z-index:1111;
+#navbar ul {
+  /*sublist in dropdown*/
+  position: absolute;
+  padding: 0;
+  left: 0;
+  display: none; /* hides sublist */
+  z-index: 1111;
 }
 
-#navbar li:hover ul ul { /*sub-sublist*/
-display: none;
+#navbar li:hover ul ul {
+  /*sub-sublist*/
+  display: none;
 }
 
-
-#navbar li:hover ul { /* shows sublist when hovering on tab */
-display: block;;
+#navbar li:hover ul {
+  /* shows sublist when hovering on tab */
+  display: block;
 }
 
 #navbar li li:hover ul {
-display: block; /* shows sub-sublist on hover */
-margin-left: 200px;
-margin-top: -45px; /* aligns top of sub-sublist with sublist */
+  display: block; /* shows sub-sublist on hover */
+  margin-left: 200px;
+  margin-top: -45px; /* aligns top of sub-sublist with sublist */
 }
 
 /* RECIPE IMAGE GRID */
@@ -130,7 +179,7 @@ margin-top: -45px; /* aligns top of sub-sublist with sublist */
 .container {
   position: relative;
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .image {
@@ -140,14 +189,14 @@ margin-top: -45px; /* aligns top of sub-sublist with sublist */
 }
 
 .overlay {
-  position: absolute; 
-  bottom: 0; 
+  position: absolute;
+  bottom: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
+  color: #f1f1f1;
   width: 100%;
-  transition: .5s ease;
-  opacity:0;
+  transition: 0.5s ease;
+  opacity: 0;
   color: white;
   font-size: 18px;
   padding: 20px;
@@ -160,8 +209,8 @@ margin-top: -45px; /* aligns top of sub-sublist with sublist */
 
 footer {
   position: relative;
-   width: 100%;
-   background-color: rgb(240, 99, 99);
-   color: white;
-   text-align: left;
+  width: 100%;
+  background-color: rgb(240, 99, 99);
+  color: white;
+  text-align: left;
 }
