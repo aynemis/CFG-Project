@@ -49,10 +49,12 @@
 
   <main>
 
+    
+    
     <h1>Pretentious Name Generator</h1>
     <h2>Specially made for
       your spoiled child or pet</h2>
-    <form>
+    <form id="generator">
       <p>Please select preferable options for your desired name:</p>
       <input type="radio" id="female" name="gender" value="female">
       <label for="female">Female</label><br>
@@ -63,7 +65,9 @@
       <input type="checkbox" id="title" name="title" value="title">
       <label for="title">Add an aristocratic title</label><br><br>
       <div class="button">
+        /*onclick=namegenerator()*/
         <input type="submit" value="Get Your Name!">
+        <p id="log"></p>
       </div>
     </form>
   </main>
@@ -90,6 +94,7 @@
       </p>
     </div>
   </footer>
+  <script type="module" src="../js/"></script> 
 </body>
 
 </html>
