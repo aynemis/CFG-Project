@@ -54,22 +54,33 @@
     <h1>Pretentious Name Generator</h1>
     <h2>Specially made for
       your spoiled child or pet</h2>
-    <form id="generator">
-      <p>Please select preferable options for your desired name:</p>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label><br>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label><br>
-      <input type="radio" id="not important" name="gender" value="not important">
-      <label for="not important">Not important</label><br><br>
-      <input type="checkbox" id="title" name="title" value="title">
-      <label for="title">Add an aristocratic title</label><br><br>
-      <div class="button">
-        /*onclick=namegenerator()*/
-        <input type="submit" value="Get Your Name!">
-        <p id="log"></p>
+     <div class="body-wrapper">
+        <div class="result-container">
+            <p class="text-container">Your baby shall now be known as</p>
+            <input type="text" class="generated-name">
+        </div>
+        <div class="form-container">
+          <form>
+            <div class="name-types">
+                <input type="radio" name="number" value="one" checked>First name only
+                <input type="radio" name="number" value="two">First and middle names
+                <input type="radio" name="number" value="three">Full aristocratic name
+      
+            </div>
+            <div class="dropdown-group">
+              <label for="genders">Gender:</label>
+              <select name="Gender" id="genders">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="button-container">
+          <button class="btn-generate">Generate</button>
+        </div>
       </div>
-    </form>
+      <script src="../js/script.js"></script>
   </main>
 
   <footer>
