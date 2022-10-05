@@ -234,3 +234,99 @@ footer {
 .footercontent {
   margin: 100px;
 }
+
+
+button {
+  box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
+  background-color: #2185d0;
+  color: #fff;
+  text-shadow: none;
+  background-image: none;
+  font-family: "Jost";
+      font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .28571429rem;
+      margin: 0 .25em 0 0;
+    padding: .78571429em 1.5em .78571429em;
+    text-transform: none;
+      cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+}
+
+.body-wrapper {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4)
+}
+
+button:hover {
+  background-color: #1678c2;
+}
+
+.body-wrapper > div + div {
+  margin-top: 20px;
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+  .result-container .text-container {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .result-container > input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #000;
+    outline: none;
+    text-align: center;
+  }
+
+.form-container form {
+  display: flex;
+}
+
+  .form-container form > div {
+    flex: 1 1 auto;
+  }
+
+  .form-container form > div + div {
+    margin-left: 30px
+  }
+
+.name-types {
+  display: flex;
+  align-items: center;
+  font-family: "Jost";
+}
+
+  .name-types input {
+    margin-left: auto
+      
+  }
+
+.dropdown-group {
+  display:flex;
+}
+   
+.dropdown-group select {
+  flex: 1 1 auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
