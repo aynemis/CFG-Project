@@ -1,10 +1,10 @@
 const firstNames = [
-  ['Henry', 'William', 'Louis'],
+  ['Albert', 'Benjamin', 'Charles', 'David', 'Quentin', 'Rupert', 'Sebastian', 'Thomas', 'Unwin', 'Vere', 'William', 'Xerxes', 'Zach'],
   ['Mary', 'Laura', 'Veronica' , 'Amanda', 'Beatrice', 'Catherine', 'Daphne', 'Edwina', 'Frances', 'Grace', 'Harriet', 'Imogen', 'Jemima', 'Katherine', 'Lucy', 'Margaret', 'Nancy']
 ];
 
 const secondNames = [
-  ['Peter', 'Fred', 'Matthew'],
+  ['Peter', 'Fred', 'Matthew', 'Edward', 'Francis', 'Giles', 'Henry', 'Inigo', 'Jonathan', 'Kenneth', 'Lionel', 'Miles', 'Nathaniel', 'Oliver', 'Patrick'],
   ['Elizabeth', 'Helena', 'Aurora', 'Olivia', 'Poppy', 'Quintana', 'Rosemary', 'Sarah', 'Tracy', 'Ursula', 'Victoria', 'Willa', 'Xanthe', 'Yseult', 'Zara']
 ];
 
