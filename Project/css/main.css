@@ -231,6 +231,8 @@ input {
   cursor: pointer;
   align-items: center;
 }
+
+/* FOOTER */
 footer {
   position: relative;
   width: 100%;
@@ -238,6 +240,33 @@ footer {
   color: white;
   text-align: left;
 }
+
 .footercontent {
-  margin: 100px;
+  margin-left: 200px;
+  margin-top:100px;
+  padding-top:2px;
+  display:flex;
+}
+
+ol li{
+    list-style-type: none;
+    color: white;
+}
+
+#authors{
+  color:white;
+}
+
+.contact{
+  padding-top:15px;
+}
+
+#top{
+  padding-top:15px;
+  color:white;
+}
+
+ol, .contact, #top{
+  flex:1;
+  margin-right:20px;
 }
